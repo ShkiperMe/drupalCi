@@ -1,0 +1,58 @@
+# Ignore core when managing all of a project's dependencies with Composer.
+# including Drupal core.
+web/core
+web/libraries
+web/modules/contrib/*
+web/themes/contrib/*
+
+# Core's dependencies are managed with Composer.
+vendor
+pipelines/vendor
+
+# Ignore local settings
+web/sites/*/backup.settings.local.php
+web/sites/*/settings.local.php
+
+# Ignore local services
+web/sites/*/services.local.yml
+
+# Ignore paths that contain user-generated content.
+web/sites/*/files
+web/sites/*/private
+private
+
+# Ignore SimpleTest multi-site environment.
+web/sites/simpletest
+
+# Ignore core phpcs.xml and phpunit.xml.
+web/core/phpcs.xml
+web/core/phpunit.xml
+
+# Ignore IDE configs
+.idea
+.DS_Store
+
+# Ignore scss cache filess.
+.sass-cache
+config/.DS_store
+*.css.map
+.phpunit.result.cache
+
+# Ignore tests settings and logs.
+run-tests.settings.php
+phpunit.local.xml
+behat.local.yml
+browser_tests.err.log
+browser_tests.out.log
+integration_tests.err.log
+integration_tests.out.log
+
+# Ignore various configs
+mysqldump.cnf
+
+# Ignore drush configuration file.
+drush/drush.yml
+
+# Ignore plesk specific files.
+web/.php-ini
+web/.php-version
